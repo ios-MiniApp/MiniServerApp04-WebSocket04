@@ -19,6 +19,11 @@ public class WebSocketConfig implements WebSocketConfigurer {
     }
 
     @Bean
+    public WebSocketDemoPathParam webSocketDemoPathParam() {
+        return new WebSocketDemoPathParam();
+    }
+
+    @Bean
     public ServerEndpointExporter serverEndpointExporter() {
         return new ServerEndpointExporter();
     }
