@@ -1,4 +1,6 @@
-package com.example.MiniServerApp04WebSocket04;
+package com.example.MiniServerApp04WebSocket04.resources;
+
+import com.example.MiniServerApp04WebSocket04.resources.WebSocketDemo;
 
 import javax.websocket.*;
 import javax.websocket.server.PathParam;
@@ -11,6 +13,13 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+/*
+ 下の３種類のをサンプルで用意しており、このファイルは「3」のサンプル。
+ クライアントは適当なパラメータをURLに付けて送ることができる、サンプルプログラム。
+ １．http://localhost:8080/WebSocketDemo,
+ ２．http://localhost:8080/WebSocketDemoJSON
+ ３．http://localhost:8080/WebSocketDemoPathParam,
+ */
 
 @ServerEndpoint("/WebSocketDemoPathParam/{parameter}")
 public class WebSocketDemoPathParam {
